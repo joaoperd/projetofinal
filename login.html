@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <style>
+                body {
+                padding: 0;
+                margin: 0;
+                background-color: #454545;
+                }
+                #login {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }
+                .card {
+                background-color: rgba(42, 20, 20, 0.3);
+                padding: 40px;
+                border-radius: 2px;
+                width:280px;
+                }
+                .header {
+                padding-bottom: 50px;
+                opacity: 0.8;
+                color: #fff;
+                }
+                .header:after {
+                content: "";
+                width: 70px;
+                height: 1px;
+                background-color: #ffe6c7;
+                display: block;
+                margin-top: -17px;
+                margin-left: -5px;
+                }
+                .content label {
+                color: #fff;
+                font-size: 12px;
+                opacity: 0.8;
+                }
+                .content-area {
+                display: flex;
+                flex-direction: column;
+                padding:10px 0;
+                }
+                .content-area input {
+                margin-top: 10px;
+                padding:0 5px;
+                background-color: transparent;
+                border:none;
+                border-bottom: 1px solid #ffe6c7;
+                outline: none;
+                color: #fff;
+                }
+
+                .footer .submit{
+                width: 100%;
+                height: 40px;
+                background-color: #a13854;
+                border: none;
+                color:#e1e1e1;
+                margin: 10px;
+                cursor: pointer;
+                }
+
+                .footer a {
+                text-align: center;
+                font-size: 12px;
+                opacity: 0.8;
+                color: #fff;
+                text-decoration: none;
+                }
+        </style>
+</head>
+        <body>
+            <div id="login">
+                <form class="card">
+                    <div class="header">
+                        <h2>Login</h2>
+                    </div>
+                        <div class="content">
+                            <div class="content-area">
+                                <input type="text" name="email" placeholder="Email" required >
+                            </div>
+                            <div class="content-area">
+                                <input type="password" name="password" placeholder="Senha" required>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <a href="home.html"> <button type="submit" value="login" class="submit"> LOGIN </a>
+                            <a href="cadastro.html"> <button type="submit" value="cadastro" class="submit"> CADASTRO </a>
+                           
+
+                          
+
+                        </div>
+                    </form>
+            </div>
+        </body>
+</html>
